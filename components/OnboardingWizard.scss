@@ -1,0 +1,135 @@
+.BarNotice{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+  .action{
+    margin-top: 5px;
+  }
+  .title{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #212B36;
+    margin-bottom: 16px;
+  }
+
+  .content-block{
+    p{
+      color: #637381;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      margin-bottom: 9px;
+    }
+
+    .steps{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      @media (max-width: 500px) {
+        flex-direction: column;
+
+      }
+
+      .step-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        @media (max-width: 500px) {
+          justify-content: left;
+          margin-bottom: 10px;
+        }
+        .title-item{
+          // color: #50b83c;
+          font-size: 1.4rem;
+          line-height: 1.7rem;
+        }
+        .icon{
+          width: 27px;
+          height: 27px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          background: white;
+          margin-right: 10px;
+          .Polaris-Icon{
+            display: none;
+          }
+          .number{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            margin: 0;
+          }
+        }
+        &.active{
+          .title-item{
+            color: #50b83c;
+          }
+          .icon{
+            background: #50b83c;
+            .Polaris-Icon{
+              display: block;
+            }
+            .number{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.reviewPromptContainer{
+  padding-bottom: 10px;
+}
+.onboardingReviewBarContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+  .reviewIllustration {
+    height: 90px;
+    width: 90px;
+  }
+  .onboardingreviewBarText {
+    margin: auto 0px auto 30px;
+    @media (max-width: 500px) {
+      text-align: center;
+    }
+  }
+
+  .onboardingReviewBar{
+    margin: auto auto auto 23px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    @media (max-width: 500px) {
+      margin: auto;
+    }
+  }
+
+  .onboardingReviewStar{
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .onboardingReviewIllustration {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .onboardingReviewTextIndicator {
+    margin: auto auto auto 17px;
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}

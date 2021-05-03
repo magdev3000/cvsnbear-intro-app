@@ -1,0 +1,424 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.Polaris-Page {
+    max-width: 100%;
+}
+
+.Polaris-Card{
+    overflow: visible;
+    position: relative;
+}
+
+.Polaris-Layout {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 3.2rem;
+}
+
+.Polaris-Layout__Section {
+    margin-left: 32px;
+}
+
+.tab-settings > .Polaris-Card {
+    background-color: red;
+    margin: 20px;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Polaris-Card__Section {
+    padding: 20px 20px;
+}
+
+.Polaris-SettingAction {
+    margin-top: 0;
+}
+
+.Polaris-SettingAction__Setting {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Polaris-SettingAction__Action {
+    margin-top: 0;
+}
+
+.Polaris-SettingAction__Setting svg {
+    position: relative;
+    top: 2px;
+    margin-right: 9px;
+}
+
+.red {
+    color: #de3618;
+}
+
+.green {
+    color: #50b83c;
+}
+
+.Polaris-Tabs__TabContainer > button {
+    padding: 0 32px;
+}
+
+.Polaris-Page__Content {
+    margin-bottom: 11px;
+}
+
+.SettingToggle_Title .Polaris-Icon{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.SettingToggle_Description {
+    color: #637381;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 17px;
+    @media (max-width: 500px) {
+        margin-bottom: 17px;
+      }
+}
+
+.Question-cart-header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem 2rem 0;
+}
+
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+
+.tab-advanced{
+    margin-bottom: 20px;
+    .mt-20{
+        margin-top: 20px;
+    }
+    .header-title{
+        color: #212B36;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-bottom: 1.4rem;
+        font-weight: bold;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        &.is-error{
+            margin-bottom: 44px;
+            .Polaris-Labelled__Error{
+                position: absolute;
+            }
+        }
+
+        &.full{
+            justify-content: flex-end;
+            .advanced-input{
+                min-width: 100%;  
+            }
+            .Polaris-Button{
+                margin-top: 20px;
+            }
+        }
+        .advanced-input{
+            width: 350px;
+        }
+        .Polaris-Label{
+            font-size: 14px;
+            line-height: 17px;
+            color: #637381;
+        }
+        .Polaris-Button{
+            margin-left: 10px;
+        }
+
+    }
+    .block-info{
+        margin-bottom: 2rem;
+        
+        .message{
+            font-size: 14px;
+            line-height: 17px;
+            
+            color: #637381;
+        }
+    }
+}
+
+.fixed-action-bottom{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #F4F6F8;
+    border-top: 1px solid #DFE3E8;
+}
+
+.tab-settings{
+    .question-show_on_home_page{
+        position: absolute; 
+        right: 0;
+        top: 0;
+    }
+    .Polaris-Layout__Section--secondary{
+        flex: 1 1 22rem;
+    }
+    .Polaris-Layout{
+        margin-bottom: 97px;
+    }
+    .Desctop-Mobile{
+        .Polaris-Button{
+            padding: 12px 20px 12px 19px;
+        }
+        .icon-title{
+            .Polaris-Icon{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .Field-bar-threshold{
+        .input {
+            width: 45px;
+        }
+    }
+    .Button-shape{
+        .Polaris-Button{
+            padding: 8px 6px;
+        }
+    }
+    .Preview{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Polaris-Button--primary{
+        .btn-icon-space-between, .btn-icon-center{
+            div {
+                background: #FFFFFF !important;
+            }
+        }
+    }
+
+    .btn-icon-space-between{
+        display: flex;
+        div{
+            width: 20px;
+            height: 4px;
+            background: #212B36;
+        }
+
+        div + div {
+            margin-left: 20px;
+        }
+    }
+
+    .btn-icon-center{
+        display: flex;
+        div{
+            width: 20px;
+            height: 4px;
+            background: #212B36;
+        }
+
+        div + div {
+            margin-left: 4px;
+        }
+    }
+
+}
+
+
+.tab-performance{
+    padding-bottom: 2rem;
+    .Notice-info{
+        display: flex;
+        flex-direction: row;
+        .Notice-info-img{
+            width: 11.1rem;
+            height: 11.1rem;
+            // background: #C4C4C4;
+            margin-right: 2rem;
+        }
+        .Notice-info-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title{
+                color: #212B36;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                margin-bottom: 1rem;
+                font-weight: 500;
+            }
+            .message{
+                color: #637381;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                margin-bottom: 1rem;
+            }
+
+            .Polaris-Link{
+                &:hover, &:active, &:focus{
+                    border: none !important;
+                    box-shadow: none !important;
+                    border-color: white;
+                    outline:0;
+                }
+            }
+        }
+    }
+
+    .Click-statistics-title{
+        display: flex;
+        flex-direction: row;
+        color: #212B36;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        align-items: center;
+        .Polaris-Icon{
+            margin: 0;
+            margin-right: 0.9rem;
+           
+        }
+    }
+    .Click-statistics-message{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #637381;
+        margin-bottom: 2rem;
+    }
+    .Click-statistics-items{
+        border: 1px solid #C4CDD5;
+        height: 10rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        .Click-statistics-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            border-right: 1px solid #C4CDD5;
+            &:last-child{
+                border-right: none;
+            }
+            .count{
+                color: #212B36;
+                font-size: 2.6rem;
+                line-height: 3.1rem;
+                margin-bottom: 0.9rem;
+            }
+            .label{  
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                color: #637381;
+            }
+        }
+    }
+
+    .Top10-clicked-products{
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: #637381;
+            .date{
+                max-width: 230px;
+                color: #212B36;
+            }
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            .item{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                min-height: 32px;
+                padding: 12px 0;
+                border-bottom: 1px solid #DFE3E8;
+                .product{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .image{
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 16px;
+                        background-color: #F4F6F8;
+                        border-radius: 2px;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+                .clicks{
+                    padding-right: 11px;
+                }
+            }
+        }
+    }
+
+    .Clicks-growth{
+        .Clicks-growth-message{
+            color: #637381;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.headerButtonsGroup {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-bottom-width: 1px;
+    border-bottom-color: #DFE3E8;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+}
+
+.notFullWidthHr{
+    border: 0.5px solid #DFE3E8;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.customFreshChatCss {
+    right: 20px !important;
+    bottom: 80px !important;
+}
+
+.customModalCss {
+    top: 55% !important;
+}
+
+.headerMainToggleButton{
+    margin-top: 20px;
+}
+
+.marginBottom{
+    height: 77px;
+}

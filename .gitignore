@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+npm-debug.log
+.prettierrc
+.DS_Store
+yarn.lock
+yarn-error.log
+TODO
+static/widget.js

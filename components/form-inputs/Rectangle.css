@@ -1,0 +1,9 @@
+.Rectangle{
+  width: 51px; 
+  border: 1px solid black;
+  height: 20px
+}
+
+.Polaris-Button--primary .Rectangle{
+  border: 1px solid white;
+}
